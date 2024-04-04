@@ -7,6 +7,7 @@ Mise en place d'un cache Apache Camel
 Ajout des dépendences<br>
 <h2>Pom.xml</h2><br>
 <p>
+---	
 <dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-cache</artifactId>
@@ -15,6 +16,7 @@ Ajout des dépendences<br>
    		<groupId>com.github.ben-manes.caffeine</groupId>
    		<artifactId>caffeine</artifactId>
   	</dependency>
+---
 <h2>application.properties</h2><br>
   
 #Configuration Apache Camel<br>
