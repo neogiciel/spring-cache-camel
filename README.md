@@ -55,10 +55,10 @@ public class ApiController {
 ## Compilation et Lancement
 ***
 ```
-Clean: *mvn clean*
+Clean: mvn clean
 Mise à jour des dependences: mvn dependency:resolve
 Compilation et Lancement: mvn spring-boot:run
-Url du service: **http://localhost:8080**
+Url du service: http://localhost:8080
 ```
 ## Fournisseur de cache
 ***
