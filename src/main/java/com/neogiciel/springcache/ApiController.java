@@ -32,8 +32,8 @@ public class ApiController {
      * test
     */
     @GetMapping(value = "/test",produces="application/json") 
-    //@Cacheable(value = "myCache", key = "'api-test'")
-    @Cacheable(value = "test")
+    @Cacheable(value = "test", key = "'api-test'")
+    //@Cacheable(value = "test")
     public String test() throws InterruptedException {
         Trace.info("Appel REST test cache");
      
