@@ -4,7 +4,7 @@
 ## Mise en place d'un cache Apache Camel
 ***
 Ajout des dépendences
-<h2>Pom.xml</h2>
+
 ```
 <dependency>
 		<groupId>org.springframework.boot</groupId>
