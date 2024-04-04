@@ -1,5 +1,22 @@
 <h1>Application Spring Cache Apache Camel</h1>
 <img src="https://github.com/neogiciel/quarkus-cache-cafeine/assets/123723616/c56eb91d-dfb8-49a1-98b8-0da983bb9476" height=160px>
+
+Instalation et lancement du service elasticsearch sur le port 9200
+```
+Utilisation d'un docker-compose
+version: '3'
+services:
+  elasticsearch:
+    image: elasticsearch:8.8.0
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+```
+
+
 <p>
 Mise en place d'un cache Apache Camel
 </p>
