@@ -3,7 +3,7 @@
 
 ## Mise en place d'un cache Apache Camel
 ***
-Ajout des dépendences : Pom.xml
+Ajout des dépendences : **Pom.xml**
 
 ```
 <dependency>
@@ -15,15 +15,16 @@ Ajout des dépendences : Pom.xml
   <artifactId>caffeine</artifactId>
 </dependency>
 ```
-Ficheir : application.properties
+Fichier : **application.properties**
 ```
 #Configuration Apache Camel<br>
 spring.cache.cache-names=test, test1<br>
 spring.cache.caffeine.spec=initialCapacity=50,maximumSize=10,expireAfterAccess=300s<br>
 ```
 
-<h2>Controller ApiController.java</h2><br>
-<p>
+## Controller ApiController.java
+***
+
 ```
 @Path("/api")
 public class ApiController {
@@ -50,17 +51,17 @@ public class ApiController {
  
 }
 ```
-<p>
 
-<h1>Compilation et Lancement</h1>
-<p>
-Clear: <b>mvn clean</b><br>
+## Compilation et Lancement
+***
+```
+Clean: <b>mvn clean</b><br>
 Mise à jour des dependences: <b>mvn dependency:resolve</b><br>
 Compilation et Lancement: <b>mvn spring-boot:run</b><br>
-Url du service: http://localhost:8080<br>  
-</p>
-<h1>Fournisseur de cache</h1>
-<p>
+Url du service: http://localhost:8080<br>
+```
+## Fournisseur de cache
+***
 Spring Boot nécessite un fournisseur de cache sous-jacent capable de stocker et de gérer les objets mis en cache et de prendre en charge les recherches. Spring Boot configure automatiquement l'un de ces fournisseurs avec les options par défaut s'il est présent dans le chemin de classe et que nous avons activé le cache par @EnableCaching.<br>
     *JCache (JSR-107) (EhCache 3, Hazelcast, Infinispan, and others)<br>
     *EhCache <br>
@@ -71,5 +72,4 @@ Spring Boot nécessite un fournisseur de cache sous-jacent capable de stocker et
     *Caffeine <br>
     *Simple cache<br>
 
-</p>
 
