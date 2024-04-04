@@ -6,8 +6,7 @@ Mise en place d'un cache Apache Camel
 <h2>Mise en place</h2><br>
 Ajout des dépendences<br>
 <h2>Pom.xml</h2><br>
-<p>
-```	
+```
 <dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-cache</artifactId>
@@ -18,11 +17,13 @@ Ajout des dépendences<br>
   	</dependency>
 ```
 <h2>application.properties</h2><br>
+```
   
 #Configuration Apache Camel<br>
 spring.cache.cache-names=test, test1<br>
 spring.cache.caffeine.spec=initialCapacity=50,maximumSize=10,expireAfterAccess=300s<br>
-</p>
+
+```
 <h2>Controller ApiController.java</h2><br>
 <p>
 ```
