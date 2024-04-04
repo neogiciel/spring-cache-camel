@@ -59,14 +59,14 @@ Url du service: http://localhost:8080<br>
 <h1>Fournisseur de cache</h1>
 <p>
 Spring Boot nécessite un fournisseur de cache sous-jacent capable de stocker et de gérer les objets mis en cache et de prendre en charge les recherches. Spring Boot configure automatiquement l'un de ces fournisseurs avec les options par défaut s'il est présent dans le chemin de classe et que nous avons activé le cache par @EnableCaching.<br>
-    *JCache (JSR-107) (EhCache 3, Hazelcast, Infinispan, and others)
-    *EhCache 
-    *Hazelcast
-    *Infinispan
-    *Couchbase
-    *Redis
-    *Caffeine 
-    *Simple cache
+    *JCache (JSR-107) (EhCache 3, Hazelcast, Infinispan, and others)<br>
+    *EhCache <br>
+    *Hazelcast<br>
+    *Infinispan<br>
+    *Couchbase<br>
+    *Redis<br>
+    *Caffeine <br>
+    *Simple cache<br>
 
 </p>
 
